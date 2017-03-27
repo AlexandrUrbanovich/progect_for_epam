@@ -39,6 +39,11 @@
 			</dependency>
 			<dependency>
 				<groupId>ru.mail.urbanovichalexandr.progect_for_epam</groupId>
+				<artifactId>dao-impl-db</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>ru.mail.urbanovichalexandr.progect_for_epam</groupId>
 				<artifactId>services</artifactId>
 				<version>1.0.0</version>
 			</dependency>

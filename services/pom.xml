@@ -15,5 +15,13 @@
 			<groupId>ru.mail.urbanovichalexandr.progect_for_epam</groupId>
 			<artifactId>dao-impl-db</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
 	</dependencies>
 </project>

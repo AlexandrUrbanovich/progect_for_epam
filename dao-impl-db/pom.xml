@@ -11,10 +11,10 @@
 	<packaging>jar</packaging>
 	
 	<dependencies>
-		<!-- <dependency> 
+		<dependency> 
 			<groupId>ru.mail.urbanovichalexandr.progect_for_epam</groupId> 
 			<artifactId>dao-api</artifactId> 
-		</dependency> -->
+		</dependency>
 		<dependency>
 			<groupId>ru.mail.urbanovichalexandr.progect_for_epam</groupId>
 			<artifactId>datamodel</artifactId>
