@@ -17,12 +17,6 @@ public class StudentServiceImpl implements IStudentService {
 	@Inject
 	private IStudentDao studentDao;
 	
-	@Value("${key1}")
-	private String key1;
-
-	@Value("${key2}")
-	private Integer key2;
-	
 	@Override
 	public Student get(Integer studentId) {
 		return studentDao.get(studentId);
