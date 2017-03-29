@@ -34,7 +34,7 @@ public class StudentDaoImpl implements IStudentDao {
 	            return null;
 	        }
 	}
-
+ 
 	@Override
 	public Student insert(Student entity) {
 		 final String INSERT_SQL = "insert into students (firstName, lastName, kurs) values(?,?,?)";
