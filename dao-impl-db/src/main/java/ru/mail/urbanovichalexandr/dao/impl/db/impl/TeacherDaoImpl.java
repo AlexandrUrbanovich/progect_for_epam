@@ -69,7 +69,7 @@ public class TeacherDaoImpl implements ITeacherDao {
 	}
 
 	@Override
-	public void delete(Teacher teacherId) {
+	public void delete(Integer teacherId) {
 		jdbcTemplate.update("delete from teachers were teacher_id = " + teacherId);
 	}
 

@@ -14,6 +14,6 @@ public interface ITeacherDao {
 	
 	List<Teacher> getAll();
 	
-	void delete(Teacher teacherId);
+	void delete(Integer teacherId);
 
 }

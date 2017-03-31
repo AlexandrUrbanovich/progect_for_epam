@@ -8,7 +8,7 @@ import ru.mail.urbanovichalexandr.datamodel.Student;
 
 public interface IStudentService {
 	
-	 Student get(Integer idStudent);
+	 Student get(Integer studentId);
 	
 	 @Transactional
 	 void save(Student student);
@@ -19,6 +19,6 @@ public interface IStudentService {
 	 List<Student> getAll();
 	 
 	 @Transactional
-	 void delete(Integer idStudent);
+	 void delete(Integer studentId);
 
 }
