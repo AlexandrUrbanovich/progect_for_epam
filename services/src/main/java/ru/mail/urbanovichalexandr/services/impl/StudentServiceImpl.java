@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IStudentDao;
 import ru.mail.urbanovichalexandr.datamodel.Student;
-import ru.mail.urbanovichalexandr.servises.IStudentService;
+import ru.mail.urbanovichalexandr.servises.IStudentServices;
 
 @Service
-public class StudentServiceImpl implements IStudentService {
+public class StudentServiceImpl implements IStudentServices {
 	
 	@Inject
 	private IStudentDao studentDao;
@@ -30,7 +30,6 @@ public class StudentServiceImpl implements IStudentService {
 		} else {
 			studentDao.update(student);
 		}
-		
 	}
 
 	@Override

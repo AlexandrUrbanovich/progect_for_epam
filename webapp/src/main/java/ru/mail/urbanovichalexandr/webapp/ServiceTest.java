@@ -4,14 +4,14 @@ package ru.mail.urbanovichalexandr.webapp;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import ru.mail.urbanovichalexandr.datamodel.Student;
-import ru.mail.urbanovichalexandr.servises.IStudentService;
+import ru.mail.urbanovichalexandr.servises.IStudentServices;
 
 public class ServiceTest {
 	
 	public static void main(String[] args){
 		 ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("web-context.xml");
 
-	        IStudentService service = context.getBean(IStudentService.class);
+	        IStudentServices service = context.getBean(IStudentServices.class);
 
 	        Student student = new Student();
 	        student.setFirstName("Ivan");

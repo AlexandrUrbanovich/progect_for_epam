@@ -14,6 +14,6 @@ public interface ICoursDao {
 	
 	List<Cours> getAll();
 	
-	void delete(Cours cours);
+	void delete(Integer cours);
 
 }

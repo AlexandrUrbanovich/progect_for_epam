@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import ru.mail.urbanovichalexandr.datamodel.Student;
 
-public interface IStudentService {
+public interface IStudentServices {
 	
 	 Student get(Integer studentId);
 	

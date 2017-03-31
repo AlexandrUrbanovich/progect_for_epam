@@ -14,7 +14,7 @@ public interface IEndDao {
 	
 	List<End> getAll();
 	
-	void delete(End end);
+	void delete(Integer end);
 
 
 }

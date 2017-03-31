@@ -16,6 +16,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.ITeacherDao;
+import ru.mail.urbanovichalexandr.datamodel.Student;
 import ru.mail.urbanovichalexandr.datamodel.Teacher;
 
 @Repository
@@ -26,12 +27,12 @@ public class TeacherDaoImpl implements ITeacherDao {
 	
 	@Override
 	public Teacher get(Integer teacherId) {
-		try{
-			return jdbcTemplate.queryForObject(" select * from teachers were teacher_id = ? ", new Object[] {teacherId}, 
-					new BeanPropertyRowMapper<Teacher>(Teacher.class));
-		}catch (EmptyResultDataAccessException e){
-			return null;
-		}
+		try {
+            return jdbcTemplate.queryForObject("select * from teachers where teacher_id = ? ", new Object[] { teacherId },
+                    new BeanPropertyRowMapper<Teacher>(Teacher.class));
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
 	}
 
 	@Override
@@ -70,7 +71,7 @@ public class TeacherDaoImpl implements ITeacherDao {
 
 	@Override
 	public void delete(Integer teacherId) {
-		jdbcTemplate.update("delete from teachers were teacher_id = " + teacherId);
+		jdbcTemplate.update("delete from teachers where teacher_id = " + teacherId);
 	}
 
 }

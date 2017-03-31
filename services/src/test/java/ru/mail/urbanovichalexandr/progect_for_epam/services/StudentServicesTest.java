@@ -5,12 +5,12 @@ import javax.inject.Inject;
 import org.junit.Test;
 
 import ru.mail.urbanovichalexandr.datamodel.Student;
-import ru.mail.urbanovichalexandr.servises.IStudentService;
+import ru.mail.urbanovichalexandr.servises.IStudentServices;
 
 public class StudentServicesTest extends AbstractTest {
 	
 	@Inject
-    private IStudentService service;
+    private IStudentServices service;
 
     @Test
     public void createTest() {
@@ -21,9 +21,10 @@ public class StudentServicesTest extends AbstractTest {
         service.save(student);
 
         System.out.println("Saved student: " + student);
-
         System.out.println(service.get(student.getStudentId()));
+        
         service.delete(student.getStudentId());
+        
         System.out.println(service.get(student.getStudentId()));
 
      }
