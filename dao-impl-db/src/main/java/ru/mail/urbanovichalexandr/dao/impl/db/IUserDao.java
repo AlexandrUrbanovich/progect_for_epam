@@ -14,6 +14,6 @@ public interface IUserDao {
 	
 	List<User> getAll();
 	
-	void delete(User user);
+	void delete(Integer userId);
 
 }

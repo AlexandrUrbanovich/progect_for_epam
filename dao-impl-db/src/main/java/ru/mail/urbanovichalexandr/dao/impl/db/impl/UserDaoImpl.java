@@ -15,7 +15,6 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IUserDao;
-import ru.mail.urbanovichalexandr.datamodel.Student;
 import ru.mail.urbanovichalexandr.datamodel.User;
 
 public class UserDaoImpl implements IUserDao {
@@ -68,9 +67,7 @@ public class UserDaoImpl implements IUserDao {
 	}
 
 	@Override
-	public void delete(User userId) {
+	public void delete(Integer userId) {
 		jdbcTemplate.update("delete from users where user_id =" + userId);
-		
 	}
-
 }

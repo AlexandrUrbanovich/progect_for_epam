@@ -14,7 +14,7 @@ public interface ICoursServiсes {
 	void save(Cours cours);
 	
 	@Transactional
-	void saveMultiple(Cours...courses);
+	void saveMultiple(Cours...cours);
 	
 	List<Cours> gelAll();
 	

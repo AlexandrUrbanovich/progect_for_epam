@@ -4,21 +4,20 @@ import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ru.mail.urbanovichalexandr.datamodel.Student;
+import ru.mail.urbanovichalexandr.datamodel.End;
 
-public interface IStudentServices {
-	
-	 Student get(Integer studentId);
+public interface IEndServices {
+
+	End get(Integer studentId);
 	
 	 @Transactional
-	 void save(Student student);
+	 void save(End end);
 	 
 	 @Transactional
-	 void saveMultiple(Student...student);
+	 void saveMultiple(End...end);
 	 
-	 List<Student> getAll();
+	 List<End> getAll();
 	 
 	 @Transactional
 	 void delete(Integer studentId);
-
 }

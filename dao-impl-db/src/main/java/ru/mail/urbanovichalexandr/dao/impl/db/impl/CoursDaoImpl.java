@@ -16,7 +16,7 @@ import org.springframework.jdbc.support.KeyHolder;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.ICoursDao;
 import ru.mail.urbanovichalexandr.datamodel.Cours;
-import ru.mail.urbanovichalexandr.datamodel.Student;
+
 
 public class CoursDaoImpl implements ICoursDao {
 	
@@ -69,5 +69,6 @@ public class CoursDaoImpl implements ICoursDao {
 	public void delete(Integer coursId) {
 		jdbcTemplate.update("delete from students where student_id =" + coursId);
 	}
+
 
 }

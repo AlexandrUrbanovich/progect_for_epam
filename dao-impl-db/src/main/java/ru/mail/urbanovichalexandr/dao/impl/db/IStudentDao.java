@@ -10,10 +10,10 @@ public interface IStudentDao {
 	
 	Student insert(Student student);
 	
-	void update(Student student);
-	
 	List<Student> getAll();
 	
 	void delete(Integer studentId);
+
+	void update(Student student);
 
 }

@@ -4,8 +4,10 @@ import java.util.List;
 
 import ru.mail.urbanovichalexandr.datamodel.Cours;
 
+
+
 public interface ICoursDao {
-	
+
 	Cours get(Integer coursId);
 	
 	Cours insert(Cours cours);
@@ -14,6 +16,5 @@ public interface ICoursDao {
 	
 	List<Cours> getAll();
 	
-	void delete(Integer cours);
-
+	void delete(Integer coursId);
 }

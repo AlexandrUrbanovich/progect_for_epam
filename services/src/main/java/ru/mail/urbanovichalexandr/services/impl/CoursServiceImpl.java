@@ -21,7 +21,7 @@ public class CoursServiceImpl implements ICoursServiсes {
 	@Override
 	public void save(Cours cours) {
 		if(cours.getCoursId()==null){
-			System.out.println("Insert new student");
+			System.out.println("Insert new cours");
 			coursDao.insert(cours);
 		} else {
 			coursDao.update(cours);
@@ -29,21 +29,20 @@ public class CoursServiceImpl implements ICoursServiсes {
 	}
 
 	@Override
-	public void saveMultiple(Cours... courses) {
-		// TODO Auto-generated method stub
-		
+	public void saveMultiple(Cours... coursArray) {
+		for(Cours cours: coursArray){
+			save(cours);
+		}
 	}
 
 	@Override
 	public List<Cours> gelAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return coursDao.getAll();
 	}
 
 	@Override
 	public void delete(Integer coursId) {
-		// TODO Auto-generated method stub
-		
+		coursDao.delete(coursId);		
 	}
 
 }

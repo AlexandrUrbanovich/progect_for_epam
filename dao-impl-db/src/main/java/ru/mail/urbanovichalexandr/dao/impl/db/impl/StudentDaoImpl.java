@@ -58,12 +58,6 @@ public class StudentDaoImpl implements IStudentDao {
 	}
 
 	@Override
-	public void update(Student student) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public List<Student> getAll() {
 		 List<Student> rs = jdbcTemplate.query("select * from students ", new BeanPropertyRowMapper<Student>(Student.class));
 	     return rs;
@@ -72,5 +66,11 @@ public class StudentDaoImpl implements IStudentDao {
 	@Override
 	public void delete(Integer studentId) {
 		jdbcTemplate.update("delete from students where student_id =" + studentId);
+	}
+
+	@Override
+	public void update(Student student) {
+		// TODO Auto-generated method stub
+		
 	}
 }
