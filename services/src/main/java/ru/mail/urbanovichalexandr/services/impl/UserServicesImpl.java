@@ -4,11 +4,13 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.stereotype.Service;
+
 import ru.mail.urbanovichalexandr.dao.impl.db.IUserDao;
 import ru.mail.urbanovichalexandr.datamodel.User;
 import ru.mail.urbanovichalexandr.servises.IUserServices;
 
-
+@Service
 public class UserServicesImpl implements IUserServices {
 	
 	@Inject

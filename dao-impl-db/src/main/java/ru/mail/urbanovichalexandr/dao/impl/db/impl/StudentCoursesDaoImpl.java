@@ -7,11 +7,13 @@ import javax.inject.Inject;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IStudentCoursesDao;
 import ru.mail.urbanovichalexandr.dao.impl.db.mapper.StudentWithCoursMapper;
 import ru.mail.urbanovichalexandr.datamodel.StudentCourses;
 
+@Repository
 public class StudentCoursesDaoImpl implements IStudentCoursesDao {
 	
 	@Inject

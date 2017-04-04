@@ -4,10 +4,14 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.stereotype.Service;
+
 import ru.mail.urbanovichalexandr.dao.impl.db.IEndDao;
 import ru.mail.urbanovichalexandr.datamodel.End;
 import ru.mail.urbanovichalexandr.servises.IEndServices;
 
+
+@Service
 public class EndServisesImpl implements IEndServices {
 	
 	@Inject

@@ -13,10 +13,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IUserDao;
 import ru.mail.urbanovichalexandr.datamodel.User;
 
+@Repository
 public class UserDaoImpl implements IUserDao {
 	
 	@Inject

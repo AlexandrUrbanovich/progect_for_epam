@@ -1,8 +1,2 @@
-15:53:32.465 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test teacher created
-15:53:32.508 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test teacher created
-15:55:09.978 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test teacher created
-15:55:09.999 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test teacher created
-22:38:04.194 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test teacher created
-22:38:04.254 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test teacher deleted
-22:38:38.940 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.StudentServicesTest - Test student created
-22:38:38.979 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.StudentServicesTest - Test student deleted
+19:55:00.046 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test user created
+19:55:00.145 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServicesTest - Test user deleted

@@ -13,10 +13,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IEndDao;
 import ru.mail.urbanovichalexandr.datamodel.End;
 
+@Repository
 public class EndDaoImpl implements IEndDao {
 	
 	@Inject
