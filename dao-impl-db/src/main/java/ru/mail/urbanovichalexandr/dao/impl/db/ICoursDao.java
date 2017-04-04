@@ -5,7 +5,6 @@ import java.util.List;
 import ru.mail.urbanovichalexandr.datamodel.Cours;
 
 
-
 public interface ICoursDao {
 
 	Cours get(Integer coursId);

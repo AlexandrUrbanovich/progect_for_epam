@@ -10,7 +10,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IStudentCoursesDao;
 import ru.mail.urbanovichalexandr.dao.impl.db.mapper.StudentWithCoursMapper;
-import ru.mail.urbanovichalexandr.datamodel.End;
 import ru.mail.urbanovichalexandr.datamodel.StudentCourses;
 
 public class StudentCoursesDaoImpl implements IStudentCoursesDao {

@@ -28,7 +28,7 @@ public class TeacherServicesTest extends AbstractTest {
 		System.out.println(service.get(teacher.getTeacherId()));
 
 		service.delete(teacher.getTeacherId());
-		LOGGER.info("Test teacher created");
+		LOGGER.info("Test teacher deleted");
 
 		System.out.println(service.get(teacher.getTeacherId()));
 

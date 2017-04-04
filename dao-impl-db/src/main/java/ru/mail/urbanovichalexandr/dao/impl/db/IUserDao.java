@@ -5,7 +5,7 @@ import java.util.List;
 import ru.mail.urbanovichalexandr.datamodel.User;
 
 public interface IUserDao {
-	
+
 	User get(Integer userId);
 	
 	User insert(User user);
@@ -15,5 +15,4 @@ public interface IUserDao {
 	List<User> getAll();
 	
 	void delete(Integer userId);
-
 }

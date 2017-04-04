@@ -8,6 +8,7 @@ import ru.mail.urbanovichalexandr.dao.impl.db.IUserDao;
 import ru.mail.urbanovichalexandr.datamodel.User;
 import ru.mail.urbanovichalexandr.servises.IUserServices;
 
+
 public class UserServicesImpl implements IUserServices {
 	
 	@Inject
@@ -21,9 +22,9 @@ public class UserServicesImpl implements IUserServices {
 	@Override
 	public void save(User user) {
 		if(user.getUserId()==null){
-			System.out.println("Insert new user");
+			System.out.println("Insetr new user");
 			userDao.insert(user);
-		} else {
+		} else{
 			userDao.update(user);
 		}
 	}
@@ -32,7 +33,7 @@ public class UserServicesImpl implements IUserServices {
 	public void saveMultiple(User... userArray) {
 		for(User user: userArray){
 			save(user);
-		}
+		}		
 	}
 
 	@Override
@@ -44,5 +45,4 @@ public class UserServicesImpl implements IUserServices {
 	public void delete(Integer userId) {
 		userDao.delete(userId);
 	}
-	
 }

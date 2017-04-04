@@ -29,7 +29,6 @@ public class TeacherServiceImpl implements ITeacherServices {
 		} else{
 			teacherDao.update(teacher);
 		}
-		
 	}
 
 	@Override
@@ -37,7 +36,6 @@ public class TeacherServiceImpl implements ITeacherServices {
 		for(Teacher teacher: teacherArray){
 			save(teacher);
 		}
-		
 	}
 
 	@Override

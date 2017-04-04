@@ -4,15 +4,14 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IStudentDao;
 import ru.mail.urbanovichalexandr.datamodel.Student;
 import ru.mail.urbanovichalexandr.servises.IStudentServices;
 
-@Service
-public class StudentServiceImpl implements IStudentServices {
+	@Service
+	public class StudentServiceImpl implements IStudentServices {
 	
 	@Inject
 	private IStudentDao studentDao;

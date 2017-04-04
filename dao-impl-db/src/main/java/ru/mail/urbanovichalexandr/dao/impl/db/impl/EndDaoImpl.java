@@ -16,7 +16,6 @@ import org.springframework.jdbc.support.KeyHolder;
 
 import ru.mail.urbanovichalexandr.dao.impl.db.IEndDao;
 import ru.mail.urbanovichalexandr.datamodel.End;
-import ru.mail.urbanovichalexandr.datamodel.Student;
 
 public class EndDaoImpl implements IEndDao {
 	

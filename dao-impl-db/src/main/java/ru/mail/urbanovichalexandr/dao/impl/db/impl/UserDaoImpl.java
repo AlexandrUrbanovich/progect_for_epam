@@ -25,32 +25,32 @@ public class UserDaoImpl implements IUserDao {
 	@Override
 	public User get(Integer userId) {
 		try {
-			return jdbcTemplate.queryForObject("select * from users where user_id = ? ", new Object[] { userId },
-					new BeanPropertyRowMapper<User>(User.class));
-		} catch (EmptyResultDataAccessException e) {
-			return null;
-		}
+            return jdbcTemplate.queryForObject("select * from users where user_id = ? ", new Object[] { userId },
+                    new BeanPropertyRowMapper<User>(User.class));
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
 	}
 
 	@Override
 	public User insert(User entity) {
-		final String INSERT_SQL = "insert into users (login, password, role) values(?,?,?)";
-
+		final String INSERT_SQL = "insert into users (login, password) values (?, ?)";
+		
 		KeyHolder keyHolder = new GeneratedKeyHolder();
-
+		
 		jdbcTemplate.update(new PreparedStatementCreator() {
+			
 			@Override
 			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
 				PreparedStatement ps = connection.prepareStatement(INSERT_SQL, new String[] { "user_id" });
 				ps.setString(1, entity.getLogin());
-				ps.setInt(2, entity.getPassword());
-				ps.setString(3, entity.getRole().name());
+                ps.setInt(2, entity.getPassword());
 				return ps;
 			}
 		}, keyHolder);
-
+		
 		Number key = keyHolder.getKey();
-		entity.setUserId(key.intValue());
+        entity.setUserId(key.intValue());
 		return entity;
 	}
 
@@ -62,12 +62,12 @@ public class UserDaoImpl implements IUserDao {
 
 	@Override
 	public List<User> getAll() {
-		List<User> rs = jdbcTemplate.query("select * from users ", new BeanPropertyRowMapper<User>(User.class));
-	    return rs;
+		List<User> rs = jdbcTemplate.query("select * from users", new BeanPropertyRowMapper<User>(User.class));
+		return rs;
 	}
 
 	@Override
 	public void delete(Integer userId) {
-		jdbcTemplate.update("delete from users where user_id =" + userId);
+		jdbcTemplate.update("delete from users where teacher_id = " + userId);		
 	}
 }
