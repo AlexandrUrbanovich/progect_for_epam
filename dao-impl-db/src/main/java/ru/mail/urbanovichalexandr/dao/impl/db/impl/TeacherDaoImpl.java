@@ -58,8 +58,17 @@ public class TeacherDaoImpl implements ITeacherDao {
 
 	@Override
 	public void update(Teacher teacher) {
-		// TODO Auto-generated method stub
-		
+		jdbcTemplate.update(new PreparedStatementCreator() {
+
+			@Override
+			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement("firstname=?, lastname=?");
+				ps.setString(1, teacher.getFirstname());
+				ps.setString(2, teacher.getLastname());
+
+				return ps;
+			}
+		});
 	}
 
 	@Override

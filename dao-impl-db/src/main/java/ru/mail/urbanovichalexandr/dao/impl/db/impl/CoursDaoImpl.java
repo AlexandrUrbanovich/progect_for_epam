@@ -36,7 +36,7 @@ public class CoursDaoImpl implements ICoursDao {
 
 	@Override
 	public Cours insert(Cours entity) {
-		final String INSERT_SQL = "insert into courses (nameCours) values(?)";
+		final String INSERT_SQL = "insert into courses (name_cours) values(?)";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
@@ -56,8 +56,16 @@ public class CoursDaoImpl implements ICoursDao {
 
 	@Override
 	public void update(Cours cours) {
-		// TODO Auto-generated method stub
-		
+		jdbcTemplate.update(new PreparedStatementCreator() {
+			
+			@Override
+			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement("name_cours=?"); 
+				ps.setString(1, cours.getNameCours());
+				
+				return ps;
+			}
+		});
 	}
 
 	@Override

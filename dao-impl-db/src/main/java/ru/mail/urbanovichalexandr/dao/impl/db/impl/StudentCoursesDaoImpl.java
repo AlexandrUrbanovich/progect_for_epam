@@ -31,7 +31,6 @@ public class StudentCoursesDaoImpl implements IStudentCoursesDao {
 
 	@Override
 	public void update(StudentCourses studentCourses) {
-		// TODO Auto-generated method stub
 		
 	}
 

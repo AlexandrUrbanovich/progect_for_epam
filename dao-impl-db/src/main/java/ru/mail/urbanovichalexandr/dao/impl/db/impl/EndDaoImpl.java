@@ -57,8 +57,17 @@ public class EndDaoImpl implements IEndDao {
 
 	@Override
 	public void update(End end) {
-		// TODO Auto-generated method stub
-		
+		jdbcTemplate.update(new PreparedStatementCreator() {
+			
+			@Override
+			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement("mark=?, text=?"); 
+				ps.setInt(1, end.getMark());
+				ps.setString(2, end.getText());
+				
+				return ps;
+			}
+		});		
 	}
 
 	@Override

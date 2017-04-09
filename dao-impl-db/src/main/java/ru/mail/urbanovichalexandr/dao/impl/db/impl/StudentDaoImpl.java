@@ -70,7 +70,17 @@ public class StudentDaoImpl implements IStudentDao {
 
 	@Override
 	public void update(Student student) {
-		// TODO Auto-generated method stub
-		
+		jdbcTemplate.update(new PreparedStatementCreator() {
+			
+			@Override
+			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement("firstname=?, lastname=?, kurs=?"); 
+				ps.setString(1,student.getFirstName());
+				ps.setString(2, student.getLastName());
+				ps.setInt(3, student.getKurs());
+				
+				return ps;
+			}
+		});		
 	}
 }

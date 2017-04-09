@@ -58,8 +58,17 @@ public class UserDaoImpl implements IUserDao {
 
 	@Override
 	public void update(User user) {
-		// TODO Auto-generated method stub
-		
+		jdbcTemplate.update(new PreparedStatementCreator() {
+			
+			@Override
+			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement("login=?, password=?"); 
+				ps.setString(1, user.getLogin());
+				ps.setInt(2, user.getPassword());
+				
+				return ps;
+			}
+		});
 	}
 
 	@Override
