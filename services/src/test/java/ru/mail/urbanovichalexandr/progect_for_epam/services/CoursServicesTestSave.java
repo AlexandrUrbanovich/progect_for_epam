@@ -9,9 +9,9 @@ import org.slf4j.LoggerFactory;
 import ru.mail.urbanovichalexandr.datamodel.Cours;
 import ru.mail.urbanovichalexandr.servises.ICoursServiсes;
 
-public class CoursServicesTest extends AbstractTest {
+public class CoursServicesTestSave extends AbstractTest {
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(StudentServicesTest.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(CoursServicesTestSave.class);
 	
 	@Inject
     private ICoursServiсes service;
@@ -26,12 +26,7 @@ public class CoursServicesTest extends AbstractTest {
 		LOGGER.info("Test cours created");
 		
 		System.out.println("Saved cours: " + cours);
-        System.out.println(service.get(cours.getCoursId()));
-        
-        service.delete(cours.getCoursId());
-        LOGGER.info("Test student deleted");
-        
-        System.out.println(service.get(cours.getCoursId()));
+      
 	}
 
 }

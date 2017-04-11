@@ -1,4 +1,4 @@
-package ru.mail.urbanovichalexandr.dao.impl.db;
+package ru.mail.urbanovichalexandr.dao.api;
 
 import java.util.List;
 

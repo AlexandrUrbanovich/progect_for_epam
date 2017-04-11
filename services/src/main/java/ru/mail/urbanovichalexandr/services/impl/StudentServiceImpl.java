@@ -6,7 +6,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import ru.mail.urbanovichalexandr.dao.impl.db.IStudentDao;
+import ru.mail.urbanovichalexandr.dao.api.IStudentDao;
 import ru.mail.urbanovichalexandr.datamodel.Student;
 import ru.mail.urbanovichalexandr.servises.IStudentServices;
 

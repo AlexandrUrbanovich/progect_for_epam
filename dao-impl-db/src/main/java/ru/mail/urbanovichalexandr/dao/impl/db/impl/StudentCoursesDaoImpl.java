@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import ru.mail.urbanovichalexandr.dao.impl.db.IStudentCoursesDao;
+import ru.mail.urbanovichalexandr.dao.api.IStudentCoursesDao;
 import ru.mail.urbanovichalexandr.dao.impl.db.mapper.StudentWithCoursMapper;
 import ru.mail.urbanovichalexandr.datamodel.StudentCourses;
 
@@ -47,14 +47,12 @@ public class StudentCoursesDaoImpl implements IStudentCoursesDao {
 
 	@Override
 	public StudentCourses getStudentWithCours(Integer studentId) {
-		return jdbcTemplate.queryForObject("select * from student_courses a" + "right join students c on a.student_id = c.student_id" +
-				"where student_id = ?",
+		return jdbcTemplate.queryForObject("select * from students a left join student_courses b on a.student_id = b.student_id  where b.student_id = ?", 
 				new Object[] {studentId}, new StudentWithCoursMapper());
 	}
 
 	@Override
 	public void insert(StudentCourses student) {
-		// TODO Auto-generated method stub
 		
 	}
 	

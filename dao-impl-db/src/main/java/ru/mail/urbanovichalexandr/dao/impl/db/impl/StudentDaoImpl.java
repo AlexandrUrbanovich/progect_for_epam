@@ -15,7 +15,7 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
-import ru.mail.urbanovichalexandr.dao.impl.db.IStudentDao;
+import ru.mail.urbanovichalexandr.dao.api.IStudentDao;
 import ru.mail.urbanovichalexandr.datamodel.Student;
 
 
