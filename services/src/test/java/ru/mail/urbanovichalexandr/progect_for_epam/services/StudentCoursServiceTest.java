@@ -21,7 +21,7 @@ private static final Logger LOGGER = LoggerFactory.getLogger(CoursServiceTestDel
 		
 		StudentCourses studentCourses = new StudentCourses();
 		
-	//	System.out.println(service.getAll());
+		System.out.println(service.getAll());
 		
 		System.out.println(service.get(studentCourses.getStudentId()));
 		LOGGER.info("Test studentCourses get");

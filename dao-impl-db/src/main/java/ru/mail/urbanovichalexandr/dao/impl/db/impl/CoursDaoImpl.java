@@ -27,8 +27,9 @@ public class CoursDaoImpl implements ICoursDao {
 	@Override
 	public Cours get(Integer coursId) {
 		try {
-            return jdbcTemplate.queryForObject("select * from courses where cours_id = ? ", new Object[] { coursId },
-                    new BeanPropertyRowMapper<Cours>(Cours.class));
+            return jdbcTemplate.queryForObject("select a.name_cours, b.firstname, b.lastname " + 
+            		"from courses a left join teachers b on a.teacher_id = b.teacher_id where cours_id = ? ", 
+            		new Object[] { coursId }, new BeanPropertyRowMapper<Cours>(Cours.class));
         	} catch (EmptyResultDataAccessException e) {
             return null;
         }
@@ -70,7 +71,9 @@ public class CoursDaoImpl implements ICoursDao {
 
 	@Override
 	public List<Cours> getAll() {
-		 List<Cours> rs = jdbcTemplate.query("select * from courses ", new BeanPropertyRowMapper<Cours>(Cours.class));
+		 List<Cours> rs = jdbcTemplate.query("select a.name_cours, b.firstname, b.lastname " +
+				 "from courses a left join teachers b on a.teacher_id = b.teacher_id", 
+            		new BeanPropertyRowMapper<Cours>(Cours.class));
 	     return rs;
 	}
 

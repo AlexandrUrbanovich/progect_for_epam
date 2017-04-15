@@ -7,27 +7,16 @@
 		<artifactId>parent-project</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>services</artifactId>
+	<artifactId>dao-impl-xml</artifactId>
 	<packaging>jar</packaging>
-	
 	<dependencies>
 		<dependency>
 			<groupId>ru.mail.urbanovichalexandr.progect_for_epam</groupId>
-			<artifactId>dao-impl-db</artifactId>
+			<artifactId>dao-api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-		</dependency>  
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-		</dependency>
-
-		       
 	</dependencies>
 </project>

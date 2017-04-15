@@ -7,13 +7,14 @@
 	    http://www.springframework.org/schema/context 
 	    http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 >
-
-
-	<mvc:annotation-driven />
+	<context:annotation-config />
+	<context:component-scan
+		base-package="ru.mail.urbanovichalexandr.dao.xml.impl" />
 	
-	<context:component-scan base-package="ru.mail.urbanovichalexandr.webapp.controllers" />
-
-
-
-
+	<context:property-placeholder
+		ignore-unresolvable="true" location="classpath:xml.properties" />
+	
+	
+	
+	
 </beans>

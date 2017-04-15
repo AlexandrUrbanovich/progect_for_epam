@@ -15,8 +15,8 @@ public class StudentWithCoursMapper implements RowMapper<StudentCourses> {
 	public StudentCourses mapRow(ResultSet rs, int rowNum) throws SQLException {
 		
 		Student student = new Student();
-		student.setFirstName(rs.getString("first_name"));
-		student.setLastName(rs.getString("last_name"));
+		student.setFirstName(rs.getString("firstname"));
+		student.setLastName(rs.getString("lastname"));
 		student.setKurs(rs.getInt("kurs"));
 		
 		Cours cours = new Cours();

@@ -39,7 +39,7 @@ public class StudentCoursesServiceImpl implements IStudentCoursesServices {
 
 	@Override
 	public List<StudentCourses> getAll() {
-		return getAll();
+		return studentCoursesDao.getAll();
 	}
 
 	@Override
