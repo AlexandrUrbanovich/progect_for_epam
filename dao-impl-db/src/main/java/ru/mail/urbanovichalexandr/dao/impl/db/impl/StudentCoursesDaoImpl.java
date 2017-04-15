@@ -51,7 +51,8 @@ public class StudentCoursesDaoImpl implements IStudentCoursesDao {
 		return jdbcTemplate.queryForObject("select a.firstname, a.lastname, c.name_cours " +
 				"from students a " +
 				"inner join student_courses b on a.student_id = b.student_id "+
-				"inner join courses c on b.cours_id = c.cours_id", 
+				"inner join courses c on b.cours_id = c.cours_id " + 
+				"where a.student_id = ?", 
 				new Object[] {studentId}, new StudentWithCoursMapper());
 	}
 
