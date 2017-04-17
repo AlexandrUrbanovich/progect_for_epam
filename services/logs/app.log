@@ -1,14 +1,1 @@
-14:08:11.825 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:09:54.542 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:12:46.316 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:18:13.859 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:22:30.799 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:35:17.308 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:36:37.094 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:40:15.202 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.StudentServiceTestGet - Test student getAll
-14:46:06.586 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-14:47:04.762 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-15:06:17.037 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-15:08:46.080 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-16:25:05.027 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-17:49:04.996 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
+15:59:04.935 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServiceTestDelete - Test studentCourses get
