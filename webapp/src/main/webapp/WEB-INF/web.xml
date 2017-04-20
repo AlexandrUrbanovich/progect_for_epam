@@ -16,14 +16,14 @@
 	<listener>
 		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
 	</listener>
-	<servlet>
+	<!-- servlet>
 		<servlet-name>servlet1</servlet-name>
 		<servlet-class>ru.mail.urbanovichalexandr.webapp.samples.Servlet1</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>servlet2</servlet-name>
 		<servlet-class>ru.mail.urbanovichalexandr.webapp.samples.Servlet2</servlet-class>
-	</servlet>
+	</servlet>-->
 	<servlet>
 		<servlet-name>SpringMVC</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet
@@ -34,7 +34,7 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	<filter>
+	<!--<filter>
 		<filter-name>f1</filter-name>
 		<filter-class>ru.mail.urbanovichalexandr.webapp.samples.Filter1</filter-class>
 	</filter>
@@ -49,7 +49,7 @@
 	<servlet-mapping>
 		<servlet-name>servlet2</servlet-name>
 		<url-pattern>/servlet2</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping>-->
 	<servlet-mapping>
 		<servlet-name>SpringMVC</servlet-name>
 		<url-pattern>/</url-pattern>
