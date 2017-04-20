@@ -15,11 +15,13 @@ public class StudentWithCoursMapper implements RowMapper<StudentCourses> {
 	public StudentCourses mapRow(ResultSet rs, int rowNum) throws SQLException {
 		
 		Student student = new Student();
+//		student.setStudentId(rs.getInt("student_id"));
 		student.setFirstName(rs.getString("firstname"));
 		student.setLastName(rs.getString("lastname"));
 		student.setKurs(rs.getInt("kurs"));
 		
 		Cours cours = new Cours();
+//		cours.setCoursId(rs.getInt("cours_id"));
 		cours.setNameCours(rs.getString("name_cours"));
 		
 		StudentCourses studentCourses = new StudentCourses();

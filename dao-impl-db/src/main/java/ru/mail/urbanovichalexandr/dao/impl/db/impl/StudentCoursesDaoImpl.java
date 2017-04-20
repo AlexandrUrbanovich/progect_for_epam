@@ -36,8 +36,11 @@ public class StudentCoursesDaoImpl implements IStudentCoursesDao {
 
 	@Override
 	public List<StudentCourses> getAll() {
-		List<StudentCourses> rs = jdbcTemplate.query("select * from student_courses ",
-				new BeanPropertyRowMapper<StudentCourses>(StudentCourses.class));
+		List<StudentCourses> rs = jdbcTemplate.query("select a.firstname, a.lastname, a.kurs, c.name_cours " +
+				"from students a " +
+				"inner join student_courses b on a.student_id = b.student_id "+
+				"inner join courses c on b.cours_id = c.cours_id ",
+				new StudentWithCoursMapper());
 	    return rs;
 	}
 
@@ -53,11 +56,11 @@ public class StudentCoursesDaoImpl implements IStudentCoursesDao {
 				"inner join student_courses b on a.student_id = b.student_id "+
 				"inner join courses c on b.cours_id = c.cours_id " + 
 				"where a.student_id = ?", 
-				new Object[] {11}, new StudentWithCoursMapper());
+				new Object[] {studentId}, new StudentWithCoursMapper());
 	}
 	
 	// new BeanPropertyRowMapper<StudentCourses>(StudentCourses.class)
-
+	
 	@Override
 	public void insert(StudentCourses student) {
 		

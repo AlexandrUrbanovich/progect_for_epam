@@ -40,7 +40,7 @@ public class StudentCourses {
 
 	@Override
 	public String toString() {
-		return "StudentCourses [studentId=" + studentId + ", coursId=" + coursId + "]";
+		return "StudentCourses [student=" + student + ", cours=" + cours + "]";
 	}
 
 }
