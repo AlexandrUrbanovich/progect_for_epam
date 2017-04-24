@@ -11,7 +11,7 @@ import ru.mail.urbanovichalexandr.servises.IStudentCoursesServices;
 
 public class StudentCoursServiceTest extends AbstractTest{
 	
-private static final Logger LOGGER = LoggerFactory.getLogger(CoursServiceTestDelete.class);
+private static final Logger LOGGER = LoggerFactory.getLogger(StudentCoursServiceTest.class);
 	
 	@Inject
     private IStudentCoursesServices service;

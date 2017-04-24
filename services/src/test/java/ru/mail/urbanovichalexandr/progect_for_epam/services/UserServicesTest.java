@@ -9,9 +9,8 @@ import org.slf4j.LoggerFactory;
 import ru.mail.urbanovichalexandr.datamodel.User;
 import ru.mail.urbanovichalexandr.servises.IUserServices;
 
-public class UserServiceTestSave extends AbstractTest{
-	
-private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceTestSave.class);
+public class UserServicesTest extends AbstractTest{
+private static final Logger LOGGER = LoggerFactory.getLogger(UserServicesTest.class);
 	
 	@Inject
 	private IUserServices service;
@@ -27,6 +26,13 @@ private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceTestSave
 
 		System.out.println("Saved user: " + user);
 		System.out.println(service.get(user.getUserId()));
+		
+		
+		System.out.println(service.getAll());
+    	LOGGER.info("Test user getAll");
+    	
+    	
+    	service.delete(user.getUserId());
+		LOGGER.info("Test user deleted");
 	}
-
 }
