@@ -18,7 +18,7 @@ public class StudentCoursesServiceImpl implements IStudentCoursesServices {
 	
 	@Override
 	public StudentCourses get(Integer studentId) {
-		return studentCoursesDao.getStudentWithCours(11);
+		return studentCoursesDao.getStudentWithCours(studentId);
 	}
 
 	@Override
