@@ -18,26 +18,27 @@ import ru.mail.urbanovichalexandr.servises.IStudentServices;
 @RestController
 @RequestMapping("/students")
 public class StudentController {
-	
+
 	@Inject
 	private IStudentServices studentService;
-	
-	@RequestMapping(value = "/{student_id}",method = RequestMethod.GET)
+
+	@RequestMapping(value = "/{student_id}", method = RequestMethod.GET)
 	public ResponseEntity<?> getById(@PathVariable(value = "student_id") Integer studentId) {
 		Student student = studentService.get(studentId);
 		StudentModel studentModel = entity2model(student);
 		return new ResponseEntity<StudentModel>(studentModel, HttpStatus.OK);
 	}
-	
+
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<?> createStudent(@RequestBody StudentModel studentModel){
-		Student student = model2entity(studentModel); 
+	public ResponseEntity<?> createStudent(@RequestBody StudentModel studentModel) {
+		Student student = model2entity(studentModel);
 		studentService.save(student);
 		return new ResponseEntity<IdModel>(new IdModel(student.getStudentId()), HttpStatus.CREATED);
 	}
-	
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<?> updateStudent(@RequestBody StudentModel studentModel, @PathVariable(value = "id") Integer StudentIdParam){
+	public ResponseEntity<?> updateStudent(@RequestBody StudentModel studentModel,
+			@PathVariable(value = "id") Integer StudentIdParam) {
 		Student student = studentService.get(StudentIdParam);
 		student.setFirstName(studentModel.getFirstName());
 		student.setLastName(studentModel.getLastName());
@@ -45,28 +46,26 @@ public class StudentController {
 		studentService.save(student);
 		return new ResponseEntity<IdModel>(HttpStatus.OK);
 	}
-	
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<?> deleteStudente( @PathVariable(value = "id") Integer StudentIdParam){
+	public ResponseEntity<?> deleteStudente(@PathVariable(value = "id") Integer StudentIdParam) {
 		studentService.delete(StudentIdParam);
 		return new ResponseEntity<IdModel>(HttpStatus.OK);
-		
 	}
-	
-	
-	 private StudentModel entity2model(Student student) {
-		 	StudentModel studentModel = new StudentModel();
-		 	studentModel.setFirstName(student.getFirstName());
-		 	studentModel.setLastName(student.getLastName());
-		 	studentModel.setKurs(student.getKurs());
-	        return studentModel;
-	    }
-	 
-	 private Student model2entity(StudentModel studentModel){
-		 Student student = new Student();
-		 student.setFirstName(studentModel.getFirstName());
-		 student.setLastName(studentModel.getLastName());
-		 student.setKurs(studentModel.getKurs());
-		 return student;
-	 }
+
+	private StudentModel entity2model(Student student) {
+		StudentModel studentModel = new StudentModel();
+		studentModel.setFirstName(student.getFirstName());
+		studentModel.setLastName(student.getLastName());
+		studentModel.setKurs(student.getKurs());
+		return studentModel;
+	}
+
+	private Student model2entity(StudentModel studentModel) {
+		Student student = new Student();
+		student.setFirstName(studentModel.getFirstName());
+		student.setLastName(studentModel.getLastName());
+		student.setKurs(studentModel.getKurs());
+		return student;
+	}
 }
