@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration >
+<Configuration>
+
 
 	<Appenders>
 		<Console name="Console" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
-		
-		
+
+
 		<RollingFile name="RollingFile" fileName="logs/app.log"
 			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
 			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
@@ -15,23 +16,25 @@
 				<SizeBasedTriggeringPolicy size="250 MB" />
 			</Policies>
 		</RollingFile>
+
 	</Appenders>
 
 	<Loggers>
 		<Root level="info">
-		    <AppenderRef ref="Console" />
+			<AppenderRef ref="Console" />
 		</Root>
-		
-		<Logger level="info" name="ru.mail.urbanovichalexandr.progect_for_epam.services"
+
+		<Logger level="info"
+			name="ru.mail.urbanovichalexandr.progect_for_epam.services"
 			additivity="false">
 			<AppenderRef ref="RollingFile" />
 		</Logger>
-		
-		<Logger level="fatal" name="ru.com.urbanovichalexandr.dao.impl" 
+
+		<Logger level="fatal" name="ru.com.urbanovichalexandr.dao.impl"
 			additivity="false">
 			<AppenderRef ref="RollingFile" />
 		</Logger>
-		
+
 	</Loggers>
 
 

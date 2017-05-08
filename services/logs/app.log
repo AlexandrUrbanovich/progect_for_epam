@@ -1,16 +1,47 @@
-12:49:03.449 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours created
-12:49:03.590 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-12:49:43.737 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours created
-12:49:43.753 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-12:50:24.516 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours created
-12:50:24.516 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours getAll
-12:50:24.813 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.CoursServicesTestGet - Test cours deleted
-13:02:52.639 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.StudentServiceTestSave - Test student created
-13:02:52.655 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.StudentServiceTestSave - Test student getAll
-13:02:52.655 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.StudentServiceTestSave - Test student deleted
-13:04:55.718 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServiceTestSave - Test teacher created
-13:04:55.727 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServiceTestSave - Test teacher getAll
-13:04:55.756 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.TeacherServiceTestSave - Test teacher deleted
-13:07:18.446 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.UserServiceTestSave - Test user created
-13:07:18.473 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.UserServiceTestSave - Test user getAll
-13:07:18.489 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.UserServiceTestSave - Test user deleted
+20:02:48.461 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:02:48.476 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+20:14:11.496 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:14:11.496 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+20:16:54.289 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:16:54.289 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+20:35:59.691 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:35:59.691 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+20:37:12.257 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:37:12.257 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+20:38:20.940 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:38:20.940 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+20:46:02.617 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+20:46:02.617 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:13:35.086 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:13:35.086 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:13:59.642 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:13:59.642 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:20:37.198 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:20:37.198 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:24:30.711 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:24:30.727 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:28:51.379 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:28:51.380 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:30:30.265 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:30:30.265 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:32:51.572 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:32:51.572 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:34:53.000 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:34:53.000 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:35:43.282 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:35:43.282 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:37:22.527 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:37:22.527 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:43:06.544 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:43:06.544 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+21:49:10.765 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample info message
+21:49:10.765 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Sample error message
+22:04:24.465 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Info Message!
+22:04:24.480 [main] WARN  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Warn Message!
+22:04:24.480 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Error Message!
+22:05:30.286 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Info Message!
+22:05:30.286 [main] WARN  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Warn Message!
+22:05:30.286 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Error Message!
+22:06:56.599 [main] INFO  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Info Message!
+22:06:56.599 [main] WARN  ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Warn Message!
+22:06:56.599 [main] ERROR ru.mail.urbanovichalexandr.progect_for_epam.services.loggerWithJDBC - Error Message!
